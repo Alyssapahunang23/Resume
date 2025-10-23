@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alyssa Pahunang - Portfolio 🎂</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #aee1ff, #ffc1e3);
+    overflow-x: hidden;
+    color: #333;
+  }
+
+  header {
+    height: 100vh;
+    background: linear-gradient(rgba(135, 206, 250, 0.8), rgba(255, 192, 203, 0.8)),
+                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80')
+                no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .birthday-icon {
+    font-size: 28px;
+    color: #fff;
+    animation: bounce 1.5s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Contact Bar */
+  .contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin-top: 30px;
+    max-width: 800px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .contact-item i {
+    font-size: 18px;
+  }
+
+  /* About Section */
+  section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section h3 {
+    color: #ff5fa2;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+  }
+
+  /* Skills Section */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .skill-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+
+  .skill-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .skill-box h4 {
+    color: #ff5fa2;
+    margin-bottom: 8px;
+  }
+
+  /* Floating Balloons */
+  .balloon {
+    position: absolute;
+    bottom: -150px;
+    width: 40px;
+    height: 60px;
+    border-radius: 50%;
+    animation: floatUp 10s infinite ease-in;
+    opacity: 0.8;
+  }
+
+  .balloon:nth-child(1) { left: 10%; background: #ffb6d9; animation-delay: 2s; }
+  .balloon:nth-child(2) { left: 30%; background: #7ec8e3; animation-delay: 4s; }
+  .balloon:nth-child(3) { left: 50%; background: #ffaec9; animation-delay: 1s; }
+  .balloon:nth-child(4) { left: 70%; background: #8ad7f8; animation-delay: 3s; }
+  .balloon:nth-child(5) { left: 90%; background: #fbc2eb; animation-delay: 5s; }
+
+  @keyframes floatUp {
+    0% { transform: translateY(0); opacity: 0.9; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    background: rgba(255,255,255,0.3);
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<!-- Floating Balloons -->
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+
+<header>
+  <img src="C:\Users\Alyssa\OneDrive\ドキュメント/alyssa.jpg" alt="Alyssa Pahunang">
+  <h1>Alyssa Pahunang</h1>
+  <h2>Information Technology Graduate 🎓</h2>
+  <div class="birthday-icon"><i class="fa-solid fa-cake-candles"></i></div>
+
+  <div class="contact-bar">
+    <div class="contact-item"><i class="fa-solid fa-phone"></i> 0963 561 4694</div>
+    <div class="contact-item"><i class="fa-solid fa-envelope"></i> pahunangalyssahangcan@gmail.com</div>
+    <div class="contact-item"><i class="fa-solid fa-location-dot"></i> Dicayas, Madison County, Dipolog City</div>
+  </div>
+</header>
+
+<section>
+  <h3>About Me</h3>
+  <p>Hello! I'm Alyssa, a passionate and motivated IT graduate who loves coding, creative design, and technology. 
+  I enjoy exploring new software tools and working on projects that combine innovation and user-friendly design. 
+  I'm currently celebrating my birthday and feeling grateful for all my achievements and opportunities ahead! 🎉</p>
+</section>
+
+<section>
+  <h3>Skills</h3>
+  <div class="skills">
+    <div class="skill-box"><h4>💻 Programming</h4><p>Proficient in web and software development.</p></div>
+    <div class="skill-box"><h4>🎨 Graphic Design</h4><p>Creative in visual design and digital art.</p></div>
+    <div class="skill-box"><h4>🧰 Computer Technician</h4><p>Knowledgeable in troubleshooting and hardware setup.</p></div>
+    <div class="skill-box"><h4>🎥 Videography</h4><p>Experienced in editing and creative storytelling.</p></div>
+  </div>
+</section>
+
+<section>
+  <h3>Interests</h3>
+  <p>🌊 Swimming • 🎮 Gaming • 🎨 Painting • 🏸 Badminton • 🌄 Adventure</p>
+</section>
+
+<footer>
+  © 2025 Alyssa Pahunang — Birthday Edition 🎂
+</footer>
+
+</body>
+</html>
